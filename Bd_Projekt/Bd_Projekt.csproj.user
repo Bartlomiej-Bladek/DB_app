@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\DeleteWindows\DeleteBiuroWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeleteDzialPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeleteKlientPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeletePodwykonawcaPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeleteProjektPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeleteWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeleteWspolpracaPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\DeleteWindows\DeleteZespolPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewBiuroPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewDzialPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewKlientPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewPodwykonawcaPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewProjektPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewWspolpracaPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewZespolPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ListsPages\DataList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertingPages\AddNewEmplyeePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Theme\AddButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\TextBoxTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteBiuroWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteDzialPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteKlientPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeletePodwykonawcaPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteProjektPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteWspolpracaPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\DeleteWindows\DeleteZespolPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewBiuroPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewDzialPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewKlientPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewPodwykonawcaPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewProjektPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewWspolpracaPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewZespolPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ListsPages\DataList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertingPages\AddNewEmplyeePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\MenuButtons.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

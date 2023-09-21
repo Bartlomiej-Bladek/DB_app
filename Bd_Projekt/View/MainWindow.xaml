@@ -1,0 +1,90 @@
+﻿<Window x:Class="Bd_Projekt.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Bd_Projekt.ViewModel"
+        xmlns:models="clr-namespace:Bd_Projekt.Model"
+        xmlns:local="clr-namespace:Bd_Projekt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+
+    <Window.Resources>
+        <models:TableTypeConverter x:Key="Converter"/>
+    </Window.Resources>
+    <Window.DataContext>
+        <StaticResourceExtension ResourceKey="SharedViewModel"/>
+    </Window.DataContext>
+    
+    <Border BorderThickness="0"
+            CornerRadius="20"
+            Background="White">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="ToDoo"
+                   Foreground="White"
+                   FontSize="25"
+                   VerticalAlignment="Center" 
+                   Margin="30,0,0,0"/>
+
+            <StackPanel Grid.Row="1"
+                        Background="LightGray">
+                <RadioButton Content="Pracownicy"
+                             IsChecked="{Binding TableType, Mode=TwoWay,Converter={StaticResource Converter},ConverterParameter=Pracownik}"
+                             x:Name="EmployeesList"
+                             Style="{StaticResource MenuButtons}"/>
+                
+                <RadioButton  x:Name="DzialyList"
+                              IsChecked="{Binding TableType ,Converter={StaticResource Converter},ConverterParameter=Dzial}"
+                              Content="Dzialy"
+                              Style="{StaticResource MenuButtons}"/>
+                
+                <RadioButton  x:Name="ZespolyList"
+                              Content="Zespoly"
+                              Style="{StaticResource MenuButtons}"/>
+
+                <RadioButton  x:Name="ProjektyList"
+                              Content="Projekty"
+                              Style="{StaticResource MenuButtons}"/>
+
+                <RadioButton  x:Name="KlienciList"
+                              Content="Klienci"
+                              Style="{StaticResource MenuButtons}"/>
+
+                <RadioButton  x:Name="WspolpraceList"
+                              Content="Wspolprace"
+                              Style="{StaticResource MenuButtons}"/>
+
+                <RadioButton  x:Name="PodwykonawcyList"
+                              Content="Podwykonawcy"
+                              Style="{StaticResource MenuButtons}"/>
+
+                <RadioButton  x:Name="BiuraList"
+                              Content="Biura"
+                              Style="{StaticResource MenuButtons}"/>
+
+
+            </StackPanel>
+
+            <Frame Source="ListsPages/DataList.xaml"
+                    Grid.Column="1"
+                   Grid.RowSpan="2"
+                   x:Name="MainFrame"
+                   Margin="20"
+                   NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+
+    </Border>
+</Window>

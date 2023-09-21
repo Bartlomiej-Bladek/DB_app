@@ -1,0 +1,28 @@
+﻿<Application x:Class="Bd_Projekt.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:vm="clr-namespace:Bd_Projekt.ViewModel"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButtons.xaml"/>
+                <ResourceDictionary Source="Theme/AddButton.xaml"/>
+                <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+                <materialDesign:CustomColorTheme BaseTheme="Light" PrimaryColor="#0077d0" SecondaryColor="DarkGreen" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+
+                
+            </ResourceDictionary.MergedDictionaries>
+            <vm:ViewModel x:Key="SharedViewModel"/>
+            <SolidColorBrush x:Key="PrimaryHueLight" Color="#0077d0" />
+            <SolidColorBrush x:Key="PrimaryHueMid" Color="#0077d0" />
+            <SolidColorBrush x:Key="PrimaryHueDark" Color="#0077d0" />
+            <SolidColorBrush x:Key="PrimaryHueForeground" Color="#0077d0" />
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,51 @@
+﻿<Page x:Class="Bd_Projekt.View.InsertingPages.AddNewDzialPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Bd_Projekt.View.InsertingPages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:vm="clr-namespace:Bd_Projekt.ViewModel"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="AddNewDzialPage">
+
+    <Page.DataContext>
+        <vm:ViewModel/>
+    </Page.DataContext>
+    <Grid>
+        <StackPanel>
+            <TextBox
+                VerticalAlignment="Top"
+
+                materialDesign:HintAssist.Hint="Nazwa dzialu (wymagane)"
+                Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                Text="{Binding Dzial.nazwa_dzialu}">
+
+            </TextBox>
+
+            <ComboBox
+                materialDesign:ComboBoxAssist.MaxLength="5"
+                materialDesign:HintAssist.Hint="id biura"
+                materialDesign:HintAssist.HintOpacity=".26"
+                IsEditable="True"
+                ItemsSource="{Binding Biura}"
+                DisplayMemberPath="adres"
+                SelectedItem="{Binding sBiuro, Mode=TwoWay}">
+            </ComboBox>
+
+
+            <Button x:Name="AddButton"
+                    Margin="0,5,0,0"
+                    Content="Dodaj"
+                    Foreground="White"
+                    FontSize="30"
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource AddButton}"
+                    Command="{Binding AddDzialCommand}">
+
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
